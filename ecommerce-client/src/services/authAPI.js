@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 // Set up API base URL
-const API_BASE_URL = import.meta.env.VITE_API_URL || 'https://ecommerce-fullstack.up.railway.app/api/auth';
+const API_BASE_URL = 'https://ecommerce-fullstack.up.railway.app/api/auth';
 
 // Create axios instance with default config
 const apiClient = axios.create({

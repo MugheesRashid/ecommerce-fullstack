@@ -94,30 +94,7 @@ function ProductListing() {
     fetchProducts();
   }, [urlCategory, urlSearch]);
 
-  // Dummy product data (fallback)
-  const dummyProducts = [
-    { id: 1, name: "GoPro HERO6 4K Action Camera - Black", price: 99.50, originalPrice: 100, image: "./product/iphone2.png", description: "Professional 4K action camera with waterproof design", category: "Cameras", stock: 15, rating: 4.5 },
-    { id: 2, name: "iPhone 14 Pro Max Case", price: 29.99, originalPrice: 39.99, image: "./product/iphone2.png", description: "Premium protective case with shock absorption", category: "Phone Cases", stock: 0, rating: 4.2 },
-    { id: 3, name: "Wireless Bluetooth Earbuds", price: 79.99, originalPrice: 99.99, image: "./product/iphone.png", description: "Noise cancelling wireless earbuds with 30h battery", category: "Audio", stock: 8, rating: 4.7 },
-    { id: 4, name: "USB-C Fast Charger 65W", price: 34.99, originalPrice: 49.99, image: "./product/iphone.png", description: "Fast charging adapter with multiple ports", category: "Chargers", stock: 25, rating: 4.3 },
-    { id: 5, name: "Screen Protector Glass", price: 14.99, originalPrice: 19.99, image: "./product/iphone.png", description: "Tempered glass screen protector 3-pack", category: "Accessories", stock: 42, rating: 4.0 },
-    { id: 6, name: "Power Bank 20000mAh", price: 49.99, originalPrice: 59.99, image: "./product/iphone.png", description: "High capacity portable charger with PD", category: "Power Banks", stock: 12, rating: 4.6 },
-    { id: 7, name: "Smart Watch Series 8", price: 299.99, originalPrice: 349.99, image: "./product/iphone.png", description: "Fitness tracker with heart rate monitor", category: "Wearables", stock: 5, rating: 4.8 },
-    { id: 8, name: "Wireless Charging Pad", price: 24.99, originalPrice: 34.99, image: "./product/iphone.png", description: "Qi-certified fast wireless charger", category: "Chargers", stock: 18, rating: 4.1 },
-    { id: 9, name: "Camera Lens Kit", price: 89.99, originalPrice: 119.99, image: "./product/iphone.png", description: "Professional lens attachment set", category: "Cameras", stock: 7, rating: 4.4 },
-    { id: 10, name: "Phone Tripod Stand", price: 19.99, originalPrice: 29.99, image: "./product/iphone.png", description: "Adjustable aluminum tripod with remote", category: "Accessories", stock: 0, rating: 4.2 },
-    { id: 11, name: "Bluetooth Speaker", price: 59.99, originalPrice: 79.99, image: "./product/iphone.png", description: "Portable waterproof speaker 20W", category: "Audio", stock: 14, rating: 4.5 },
-    { id: 12, name: "Multi-Port USB Hub", price: 39.99, originalPrice: 49.99, image: "./product/iphone.png", description: "7-in-1 USB C hub with 4K HDMI", category: "Accessories", stock: 22, rating: 4.3 },
-    { id: 7, name: "Smart Watch Series 8", price: 299.99, originalPrice: 349.99, image: "./product/iphone.png", description: "Fitness tracker with heart rate monitor", category: "Wearables", stock: 5, rating: 4.8 },
-    { id: 8, name: "Wireless Charging Pad", price: 24.99, originalPrice: 34.99, image: "./product/iphone.png", description: "Qi-certified fast wireless charger", category: "Chargers", stock: 18, rating: 4.1 },
-    { id: 9, name: "Camera Lens Kit", price: 89.99, originalPrice: 119.99, image: "./product/iphone.png", description: "Professional lens attachment set", category: "Cameras", stock: 7, rating: 4.4 },
-    { id: 10, name: "Phone Tripod Stand", price: 19.99, originalPrice: 29.99, image: "./product/iphone.png", description: "Adjustable aluminum tripod with remote", category: "Accessories", stock: 0, rating: 4.2 },
-    { id: 11, name: "Bluetooth Speaker", price: 59.99, originalPrice: 79.99, image: "./product/iphone.png", description: "Portable waterproof speaker 20W", category: "Audio", stock: 14, rating: 4.5 },
-    { id: 12, name: "Multi-Port USB Hub", price: 39.99, originalPrice: 49.99, image: "./product/iphone.png", description: "7-in-1 USB C hub with 4K HDMI", category: "Accessories", stock: 22, rating: 4.3 },
-
-  ];
-
-  const categories = ["All", "Cameras", "Phone Cases", "Audio", "Chargers", "Accessories", "Power Banks", "Wearables"];
+  const categories = ["All","electronics", "clothing", "furniture", "accessories", "other"]
 
   const productsPerPage = 9;
 
@@ -263,7 +240,7 @@ function ProductListing() {
                       type="checkbox"
                       id={`mobile-category-${category}`}
                       checked={filters.category.includes(category) || (category === "All" && filters.category.length === 0)}
-                      onChange={() => handleCategoryChange(category)}
+                      onChange={() => {handleCategoryChange(category); console.log('Mobile category filter changed:', category);}}
                       className="mr-2 h-4 w-4 rounded border-gray-300 text-blue-600 focus:ring-blue-500"
                     />
                     <label htmlFor={`mobile-category-${category}`} className="text-sm">
@@ -341,7 +318,7 @@ function ProductListing() {
                   type="checkbox"
                   id={`category-${category}`}
                   checked={filters.category.includes(category) || (category === "All" && filters.category.length === 0)}
-                  onChange={() => handleCategoryChange(category)}
+                      onChange={() => {handleCategoryChange(category); console.log('Mobile category filter changed:', category);}}
                   className="mr-2 h-4 w-4 rounded border-gray-300 text-blue-600 focus:ring-blue-500"
                 />
                 <label htmlFor={`category-${category}`} className="text-sm">

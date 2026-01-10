@@ -50,13 +50,10 @@ function Landing() {
             All Category
           </p>
           <p className="px-2 py-2 cursor-pointer hover:text-blue-600" onClick={() => navigate('/products?category=electronics')}>Electronics</p>
-          <p className="px-2 py-2 cursor-pointer hover:text-blue-600" onClick={() => navigate('/products?category=furniture')}>Home & Kitchen</p>
-          <p className="px-2 py-2 cursor-pointer hover:text-blue-600" onClick={() => navigate('/products?category=clothing')}>Fashion</p>
-          <p className="px-2 py-2 cursor-pointer hover:text-blue-600" onClick={() => navigate('/products?category=books')}>Books</p>
-          <p className="px-2 py-2 cursor-pointer hover:text-blue-600" onClick={() => navigate('/products?category=electronics')}>Toys & Games</p>
-          <p className="px-2 py-2 cursor-pointer hover:text-blue-600" onClick={() => navigate('/products?category=electronics')}>Sports</p>
-          <p className="px-2 py-2 cursor-pointer hover:text-blue-600" onClick={() => navigate('/products?category=electronics')}>Machinery</p>
-          <p className="px-2 py-2 cursor-pointer hover:text-blue-600" onClick={() => navigate('/products?category=accessories')}>Animal And Pet</p>
+          <p className="px-2 py-2 cursor-pointer hover:text-blue-600" onClick={() => navigate('/products?category=clothing')}>Clothing</p>
+          <p className="px-2 py-2 cursor-pointer hover:text-blue-600" onClick={() => navigate('/products?category=furniture')}>Furniture</p>
+          <p className="px-2 py-2 cursor-pointer hover:text-blue-600" onClick={() => navigate('/products?category=accessories')}>Accessories</p>
+          <p className="px-2 py-2 cursor-pointer hover:text-blue-600" onClick={() => navigate('/products?category=other')}>Other</p>
         </div>
         <div className="mid bg-[url('./landing/hero_sec.png')] text-[#222] tracking-tighter flex flex-col items-start gap-1 p-10 bg-center bg-cover bg-no-repeat w-full md:w-[56%] h-full">
           <p className="text-[25px] md:text-[1.4vw] leading-none ">
@@ -66,7 +63,7 @@ function Landing() {
             Electronic items
           </h2>
           <button 
-            onClick={() => navigate('/products?category=electronics')}
+            onClick={() => navigate('/products')}
             className="px-4 py-2 text-blue-500 bg-white mt-3 rounded-lg hover:bg-gray-100 cursor-pointer"
           >
             Shop Now

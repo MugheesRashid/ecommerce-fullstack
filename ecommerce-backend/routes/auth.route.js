@@ -131,7 +131,7 @@ router.post("/user/wishlist", authenticateUser, async (req, res) => {
       });
     }
 
-    const result = await AuthService.addToWishlist(req.user.id, productId);
+    const result = await AuthService.addToWishlist(req.user._id, productId);
     res.status(201).json(result);
   } catch (error) {
     res.status(400).json({
