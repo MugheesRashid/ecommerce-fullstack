@@ -9,4 +9,4 @@ const AdminAuthMiddleware = ({children}) => {
   return children;
 };
 
-export default AuthMiddleware;
+export default AdminAuthMiddleware;
