@@ -15,7 +15,7 @@ import AdminLogin from "./pages/AdminLogin.jsx";
 import CheckoutPage from "./pages/Checkout.jsx";
 
 import AuthMiddleware from "./middleware/AuthMiddleware.jsx";
-import AdminAuthMiddleware from "./middleware/AdminAuthMiddleware.jsx";
+import AuthMiddleware from "./middleware/AdminAuthMiddleware.jsx";
 
 import Footer from "./components/Footer.jsx";
 import "./App.css";
