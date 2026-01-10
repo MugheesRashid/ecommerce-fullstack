@@ -25,7 +25,7 @@ npm install
 npm run dev
 ```
 
-Backend: `http://localhost:5000` | Frontend: `http://localhost:5173`
+Backend: `https://ecommerce-fullstack.up.railway.app` | Frontend: `http://localhost:5173`
 
 ---
 
@@ -193,7 +193,7 @@ cd ecommerce-client
 npm install
 
 # Create .env.local file
-echo "VITE_API_URL=http://localhost:5000/api" > .env.local
+echo "VITE_API_URL=https://ecommerce-fullstack.up.railway.app/api" > .env.local
 
 # Start development server
 npm run dev
@@ -211,7 +211,7 @@ npm run preview
 
 ### Base URL
 ```
-http://localhost:5000/api
+https://ecommerce-fullstack.up.railway.app/api
 ```
 
 ### Health Check
@@ -548,7 +548,7 @@ NODE_ENV=development
 
 ### Frontend (.env.local)
 ```
-VITE_API_URL=http://localhost:5000/api
+VITE_API_URL=https://ecommerce-fullstack.up.railway.app/api
 ```
 
 ---
@@ -560,7 +560,7 @@ VITE_API_URL=http://localhost:5000/api
 cd ecommerce-backend
 npm install
 npm start
-# Server runs on http://localhost:5000
+# Server runs on https://ecommerce-fullstack.up.railway.app
 ```
 
 ### Start Frontend (in a new terminal)

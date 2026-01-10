@@ -25,7 +25,7 @@ function AdminLogin() {
 
     try {
       const response = await axios.post(
-        "http://localhost:5000/api/auth/admin/login",
+        "https://ecommerce-fullstack.up.railway.app/api/auth/admin/login",
         {
           email: formData.email,
           password: formData.password,

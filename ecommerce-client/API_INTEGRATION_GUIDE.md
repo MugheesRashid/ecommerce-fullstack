@@ -41,7 +41,7 @@ AuthAPIService.addOrder(orderData)
 
 ### 2. **Environment Configuration** (`.env.local`)
 ```
-VITE_API_URL=http://localhost:5000/api/auth
+VITE_API_URL=https://ecommerce-fullstack.up.railway.app/api/auth
 ```
 - Configure this to match your backend API URL
 - Uses Vite's environment variable system

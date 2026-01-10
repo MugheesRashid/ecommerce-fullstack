@@ -31,7 +31,7 @@ export function LoginPage() {
 
     try {
       const response = await axios.post(
-        "http://localhost:5000/api/auth/login",
+        "https://ecommerce-fullstack.up.railway.app/api/auth/login",
         {
           email: formData.email,
           password: formData.password,
@@ -306,7 +306,7 @@ export function SignupPage() {
 
     try {
       const response = await axios.post(
-        "http://localhost:5000/api/auth/register",
+        "https://ecommerce-fullstack.up.railway.app/api/auth/register",
         formData
       );
 

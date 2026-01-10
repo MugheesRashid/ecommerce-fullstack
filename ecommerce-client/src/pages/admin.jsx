@@ -161,7 +161,7 @@ function ProductManagement({ products, onAddProduct, onUpdateProduct, onDeletePr
 
       if (editingProduct) {
         const response = await axios.put(
-          `http://localhost:5000/api/products/admin/update/${editingProduct._id}`,
+          `https://ecommerce-fullstack.up.railway.app/api/products/admin/update/${editingProduct._id}`,
           data,
           {
             headers: {
@@ -172,7 +172,7 @@ function ProductManagement({ products, onAddProduct, onUpdateProduct, onDeletePr
         onUpdateProduct(response.data.data);
       } else {
         const response = await axios.post(
-          "http://localhost:5000/api/products/admin/create",
+          "https://ecommerce-fullstack.up.railway.app/api/products/admin/create",
           data,
           {
             headers: {
@@ -224,7 +224,7 @@ function ProductManagement({ products, onAddProduct, onUpdateProduct, onDeletePr
       try {
         const token = localStorage.getItem("adminToken");
         await axios.delete(
-          `http://localhost:5000/api/products/admin/delete/${productId}`,
+          `https://ecommerce-fullstack.up.railway.app/api/products/admin/delete/${productId}`,
           {
             headers: {
               Authorization: `Bearer ${token}`,
@@ -634,7 +634,7 @@ function OrderManagement({ orders, onUpdateOrder, isLoading, onRefresh }) {
       setIsUpdating(true);
       const token = localStorage.getItem("adminToken");
       await axios.put(
-        `http://localhost:5000/api/orders/admin/${orderId}/status`,
+        `https://ecommerce-fullstack.up.railway.app/api/orders/admin/${orderId}/status`,
         { status: newStatus, notes },
         { headers: { Authorization: `Bearer ${token}` } }
       );
@@ -658,7 +658,7 @@ function OrderManagement({ orders, onUpdateOrder, isLoading, onRefresh }) {
       setIsUpdating(true);
       const token = localStorage.getItem("adminToken");
       await axios.put(
-        `http://localhost:5000/api/orders/admin/${orderId}/tracking`,
+        `https://ecommerce-fullstack.up.railway.app/api/orders/admin/${orderId}/tracking`,
         { trackingNumber },
         { headers: { Authorization: `Bearer ${token}` } }
       );
@@ -918,7 +918,7 @@ function AdminPanel() {
     try {
       setOrdersLoading(true);
       const token = localStorage.getItem("adminToken");
-      const response = await axios.get("http://localhost:5000/api/orders/admin/all", {
+      const response = await axios.get("https://ecommerce-fullstack.up.railway.app/api/orders/admin/all", {
         headers: { Authorization: `Bearer ${token}` },
         params: { limit: 100 }
       });
@@ -941,7 +941,7 @@ function AdminPanel() {
           return;
         }
 
-        const productsRes = await axios.get("http://localhost:5000/api/products", {
+        const productsRes = await axios.get("https://ecommerce-fullstack.up.railway.app/api/products", {
           headers: { Authorization: `Bearer ${token}` },
           params: { limit: 10000, page: 1 }
         });

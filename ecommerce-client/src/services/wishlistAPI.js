@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_BASE_URL = "http://localhost:5000/api/auth/user/wishlist";
+const API_BASE_URL = "https://ecommerce-fullstack.up.railway.app/api/auth/user/wishlist";
 
 const wishlistAPI = axios.create({
   baseURL: API_BASE_URL,

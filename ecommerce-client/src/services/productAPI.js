@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_BASE_URL = 'http://localhost:5000/api/products';
+const API_BASE_URL = 'https://ecommerce-fullstack.up.railway.app/api/products';
 
 // Create axios instance for product requests
 const productClient = axios.create({

@@ -17,7 +17,7 @@ npm install
 node server.js
 ```
 
-The server will start on `http://localhost:5000`
+The server will start on `https://ecommerce-fullstack.up.railway.app`
 
 ---
 
@@ -421,7 +421,7 @@ NODE_ENV=development
 
 **Register a User:**
 ```bash
-curl -X POST http://localhost:5000/api/auth/register \
+curl -X POST https://ecommerce-fullstack.up.railway.app/api/auth/register \
   -H "Content-Type: application/json" \
   -d '{
     "fullname": "John Doe",
@@ -432,7 +432,7 @@ curl -X POST http://localhost:5000/api/auth/register \
 
 **Login:**
 ```bash
-curl -X POST http://localhost:5000/api/auth/login \
+curl -X POST https://ecommerce-fullstack.up.railway.app/api/auth/login \
   -H "Content-Type: application/json" \
   -d '{
     "email": "john@example.com",
@@ -442,7 +442,7 @@ curl -X POST http://localhost:5000/api/auth/login \
 
 **Get User Profile (with token):**
 ```bash
-curl -X GET http://localhost:5000/api/auth/user/profile \
+curl -X GET https://ecommerce-fullstack.up.railway.app/api/auth/user/profile \
   -H "Authorization: Bearer <token>"
 ```
 

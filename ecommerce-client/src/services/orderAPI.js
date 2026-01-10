@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_BASE_URL = "http://localhost:5000/api/orders";
+const API_BASE_URL = "https://ecommerce-fullstack.up.railway.app/api/orders";
 
 const orderAPI = axios.create({
   baseURL: API_BASE_URL,
