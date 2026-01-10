@@ -1,6 +1,10 @@
 const express = require("express");
 const helmet = require("helmet");
 const mongoose = require("mongoose");
+const dotenv = require("dotenv");
+const cors = require("cors");
+
+dotenv.config();
 const authRoutes = require("./routes/auth.route");
 const productRoutes = require("./routes/product.route");
 const cartRoutes = require("./routes/cart.route");
@@ -11,6 +15,12 @@ const app = express();
 
 // Security Middleware
 app.use(helmet());
+const corsOptions = {
+  origin: "*",
+  methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
+  allowedHeaders: ["Content-Type", "Authorization"],
+};
+app.use(cors(corsOptions));
 
 // Body Parser Middleware
 app.use(express.json({ limit: "10mb" }));
@@ -19,7 +29,10 @@ app.use(express.urlencoded({ limit: "10mb", extended: true }));
 // CORS Middleware
 app.use((req, res, next) => {
   res.header("Access-Control-Allow-Origin", "*");
-  res.header("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE, PATCH, OPTIONS");
+  res.header(
+    "Access-Control-Allow-Methods",
+    "GET, POST, PUT, DELETE, PATCH, OPTIONS"
+  );
   res.header("Access-Control-Allow-Headers", "Content-Type, Authorization");
 
   if (req.method === "OPTIONS") {
