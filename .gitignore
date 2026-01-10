@@ -1,0 +1,9 @@
+# ===== Node modules =====
+ecommerce-backend/node_modules/
+ecommerce-client/node_modules/
+
+# ===== Env files =====
+ecommerce-backend/.env
+ecommerce-client/.env.local
+ecommerce-client/.env
+ecommerce-backend/.env.local
