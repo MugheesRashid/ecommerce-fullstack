@@ -1,6 +1,31 @@
-# E-Commerce Platform
+# 🛍️ E-Commerce Platform
 
-A full-stack e-commerce application built with **Node.js + Express** backend and **React + Vite** frontend. This project provides a complete shopping platform with user authentication, product management, shopping cart, and order processing.
+> A modern, full-stack e-commerce application with complete user authentication, product management, shopping cart, and order processing.
+
+[![Node.js](https://img.shields.io/badge/Node.js-v14+-green?style=flat-square)](https://nodejs.org/)
+[![Express.js](https://img.shields.io/badge/Express.js-v5.2.1-blue?style=flat-square)](https://expressjs.com/)
+[![React](https://img.shields.io/badge/React-v19-61DAFB?style=flat-square&logo=react)](https://react.dev/)
+[![Vite](https://img.shields.io/badge/Vite-v7.2-646CFF?style=flat-square&logo=vite)](https://vitejs.dev/)
+[![MongoDB](https://img.shields.io/badge/MongoDB-Database-green?style=flat-square&logo=mongodb)](https://www.mongodb.com/)
+[![License](https://img.shields.io/badge/License-MIT-yellow?style=flat-square)](LICENSE)
+
+---
+
+## 🚀 Quick Start
+
+```bash
+# Backend Setup
+cd ecommerce-backend
+npm install
+npm start
+
+# Frontend Setup (in new terminal)
+cd ecommerce-client
+npm install
+npm run dev
+```
+
+Backend: `http://localhost:5000` | Frontend: `http://localhost:5173`
 
 ---
 
@@ -594,35 +619,73 @@ npm start
 
 ---
 
-## 📝 Notes
+## 📝 Important Notes
 
-- All protected routes require a valid JWT token in the `Authorization` header as `Bearer <token>`
-- Passwords are hashed using bcrypt before storage
-- JWT tokens are used for stateless authentication
-- CORS is enabled for cross-origin requests
-- MongoDB connection required for backend operation
-- All timestamps are in ISO 8601 format
-
----
-
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
+- ✅ All protected routes require a valid JWT token in the `Authorization` header as `Bearer <token>`
+- 🔒 Passwords are hashed using bcrypt before storage
+- 🔐 JWT tokens are used for stateless authentication
+- 🌐 CORS is enabled for cross-origin requests
+- 💾 MongoDB connection required for backend operation
+- ⏰ All timestamps are in ISO 8601 format
 
 ---
 
-## 📄 License
+## 🎯 Key Features Breakdown
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+### Authentication & Security
+- JWT-based authentication
+- Role-based access control (User/Admin)
+- Password encryption with bcrypt
+- Protected API endpoints
+
+### Product Management
+- Full CRUD operations (Admin only)
+- Pagination support
+- Category filtering
+- Inventory tracking
+
+### Shopping Experience
+- Add/remove items from cart
+- Wishlist functionality
+- Order creation and tracking
+- Order cancellation
+
+### Admin Dashboard
+- Order management with filters
+- Status and tracking updates
+- Statistics and analytics
+- User management
 
 ---
 
-## 📞 Support
+## 🛠️ Technologies Used
 
-For issues, questions, or suggestions, please open an issue in the repository.
+**Backend Stack:**
+- Express.js - Web framework
+- MongoDB - NoSQL database
+- Mongoose - ODM
+- JWT - Authentication
+- Bcrypt - Password hashing
+- Helmet - Security headers
 
-**Happy Coding! 🎉**
+**Frontend Stack:**
+- React 19 - UI library
+- Vite - Build tool
+- React Router - Navigation
+- Axios - HTTP client
+- Tailwind CSS - Styling
+- Lucide React - Icons
+
+---
+
+## 📊 Project Statistics
+
+- **Routes**: 25+ API endpoints
+- **Models**: 4 database schemas
+- **Pages**: 9+ frontend pages
+- **Components**: Reusable React components
+- **Services**: API abstraction layer
+
+---
+
+**Built with ❤️ | Fully Open Source**
