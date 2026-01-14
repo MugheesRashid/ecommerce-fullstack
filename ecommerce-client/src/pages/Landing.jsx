@@ -55,7 +55,7 @@ function Landing() {
           <p className="px-2 py-2 cursor-pointer hover:text-blue-600" onClick={() => navigate('/products?category=accessories')}>Accessories</p>
           <p className="px-2 py-2 cursor-pointer hover:text-blue-600" onClick={() => navigate('/products?category=other')}>Other</p>
         </div>
-        <div className="mid bg-[url('./landing/hero_sec.png')] text-[#222] tracking-tighter flex flex-col items-start gap-1 p-10 bg-center bg-cover bg-no-repeat w-full md:w-[56%] h-full">
+        <div className="mid bg-[url('/landing/hero_sec.png')] text-[#222] tracking-tighter flex flex-col items-start gap-1 p-10 bg-center bg-cover bg-no-repeat w-full md:w-[56%] h-full">
           <p className="text-[25px] md:text-[1.4vw] leading-none ">
             Latest Trending
           </p>
@@ -167,7 +167,7 @@ function Landing() {
         </div>
       </div>
       <div className="section3 mb-5 h-[30vh] md:h-[40vh] w-full flex mt-3 flex-col md:flex-row border border-solid border-[#DEE2E7]">
-        <div className="relative md:flex hidden left w-[23%] border-r border-[#DEE2E7] bg-[url('./landing/hero2.jpg')] bg-cover bg-center">
+        <div className="relative md:flex hidden left w-[23%] border-r border-[#DEE2E7] bg-[url('/landing/hero2.jpg')] bg-cover bg-center">
           <div className="absolute z-10 inset-0 bg-[#FFE8BA]/40"></div>
           <div className="txt z-20 relative flex flex-col justify-center items-start -gap-1 p-4">
             <p className="text-[20px] w-full md:w-3/4 font-semibold leading-none">
@@ -215,7 +215,7 @@ function Landing() {
           Source Now
         </p>
       </div>
-      <div className="section4 w-full md:h-[70vh] h-[30vh] bg-[url('./landing/hero3.png')] bg-center bg-cover bg-no-repeat flex flex-row items-start justify-between mb-10 p-10">
+      <div className="section4 w-full md:h-[70vh] h-[30vh] bg-[url('/landing/hero3.png')] bg-center bg-cover bg-no-repeat flex flex-row items-start justify-between mb-10 p-10">
         <div className="flex flex-col gap-4 text-white">
           <h3 className="text-[7vw] md:text-[2.2vw] leading-none font-semibold md:w-2/3 w-full">
             An easy way to send requests to all suppliers
@@ -304,7 +304,7 @@ function Landing() {
         </h1>
         <div className="w-full bg-[#F1F6FF] flex flex-row justify-center items-center gap-5">
           <div className="w-1/4 h-[35vh] rounded-lg flex flex-col items-center justify-center relative">
-            <div className="w-full h-[65%] bg-[url('./landing/ex1.png')] bg-center bg-cover bg-no-repeat mb-2"></div>
+            <div className="w-full h-[65%] bg-[url('/landing/ex1.png')] bg-center bg-cover bg-no-repeat mb-2"></div>
             <div className="absolute bg-black/50 w-full h-[60%] top-0 left-0"></div>
             <div className="rounded-full w-12 h-12 absolute top-[60%] -translate-y-1/2 right-5 bg-[#D1E7FF] border-2 border-white flex items-center justify-center border-solid">
               <Search color="#222" />
@@ -314,7 +314,7 @@ function Landing() {
             </p>
           </div>
           <div className="w-1/4 h-[35vh] rounded-lg flex flex-col items-center justify-center relative">
-            <div className="w-full h-[65%] bg-[url('./landing/ex2.png')] bg-center bg-cover bg-no-repeat mb-2"></div>
+            <div className="w-full h-[65%] bg-[url('/landing/ex2.png')] bg-center bg-cover bg-no-repeat mb-2"></div>
             <div className="absolute bg-black/50 w-full h-[60%] top-0 left-0"></div>
             <div className="rounded-full w-12 h-12 absolute top-[60%] -translate-y-1/2 right-5 bg-[#D1E7FF] border-2 border-white flex items-center justify-center border-solid">
               <Store color="#222" />
@@ -324,7 +324,7 @@ function Landing() {
             </p>
           </div>
           <div className="w-1/4 h-[35vh] rounded-lg flex flex-col items-center justify-center relative">
-            <div className="w-full h-[65%] bg-[url('./landing/ex3.png')] bg-center bg-cover bg-no-repeat mb-2"></div>
+            <div className="w-full h-[65%] bg-[url('/landing/ex3.png')] bg-center bg-cover bg-no-repeat mb-2"></div>
             <div className="absolute bg-black/50 w-full h-[60%] top-0 left-0"></div>
             <div className="rounded-full w-12 h-12 absolute top-[60%] -translate-y-1/2 right-5 bg-[#D1E7FF] border-2 border-white flex items-center justify-center border-solid">
               <SendHorizontal color="#222" />
@@ -334,7 +334,7 @@ function Landing() {
             </p>
           </div>
           <div className="w-1/4 h-[35vh] rounded-lg flex flex-col items-center justify-center relative">
-            <div className="w-full h-[65%] bg-[url('./landing/ex4.png')] bg-center bg-cover bg-no-repeat mb-2"></div>
+            <div className="w-full h-[65%] bg-[url('/landing/ex4.png')] bg-center bg-cover bg-no-repeat mb-2"></div>
             <div className="absolute bg-black/50 w-full h-[60%] top-0 left-0"></div>
             <div className="rounded-full w-12 h-12 absolute top-[60%] -translate-y-1/2 right-5 bg-[#D1E7FF] border-2 border-white flex items-center justify-center border-solid">
               <Shield color="#222" />

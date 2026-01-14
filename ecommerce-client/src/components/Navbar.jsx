@@ -218,7 +218,7 @@ function Navbar() {
           <select
             className="h-full w-[25%] text-[#8B96A5FF] px-3 border-l border-solid border-blue-500 text-[14px] font-semibold"
             value={selectedCategory}
-            onChange={(e) => setSelectedCategory(e.target.value)}
+            onChange={(e) => window.location.href = e.target.value === "all" ? "/products" : `/products?category=${e.target.value}`}
           >
             <option value="all">All Category</option>
             <option value="electronics">Electronics</option>
@@ -341,7 +341,7 @@ function Navbar() {
       {/* Desktop Category Bar */}
       <div className="further hidden md:flex flex-row justify-around py-1 items-center border-b border-solid border-[#e0e0e0] text-[#1C1C1C]">
         <div className="left flex flex-row justify-center items-center gap-4 font-medium text-[13px]">
-          <div className="flex flex-row cursor-pointer hover:text-blue-500">
+          <div className="flex flex-row cursor-not-allowed hover:text-blue-500">
             <TextAlignJustify
               className="mt-1 mr-1"
               height={15}
@@ -355,7 +355,7 @@ function Navbar() {
             "Top 100 Offers",
             "New Arrivals",
           ].map((item, index) => (
-            <p key={index} className="cursor-pointer hover:text-blue-500">
+            <p key={index} className="cursor-not-allowed hover:text-blue-500">
               {item}
             </p>
           ))}
