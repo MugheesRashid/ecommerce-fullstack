@@ -45,6 +45,7 @@ function ProductListing() {
   useEffect(() => {
     const fetchWishlist = async () => {
       try {
+        if(!localStorage.getItem("token")) return;
         const response = await WishlistAPIService.getWishlist();
         if (response.success || Array.isArray(response.wishlist)) {
           const wishlistIds = (
