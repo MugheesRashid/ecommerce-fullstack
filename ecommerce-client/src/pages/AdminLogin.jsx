@@ -259,9 +259,9 @@ function AdminLogin() {
               </summary>
               <div className="mt-2 p-3 bg-gray-50 rounded-lg">
                 <p className="font-mono text-left">
-                  Email: admin@example.com
+                  Email: admin@ecommerce.com
                   <br />
-                  Password: admin123
+                  Password: Admin@123456
                 </p>
               </div>
             </details>
